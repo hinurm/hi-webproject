@@ -1,0 +1,29 @@
+h1 {
+	text-align: center;
+	color: grey;
+	margin-top: 2rem;
+	margin-bottom: 2rem;
+}
+.active {
+	color: red;
+	text-decoration:none;
+}
+.img {
+	width: 100%;
+	height: auto;
+}
+.container {
+	margin-top: 50px;
+	padding-left: 5%;
+	padding-right: 5%;
+}
+.map-container {
+	background-color: grey;
+	height: 700px;
+}
+footer {
+	margin-top:50px;
+	padding:1%;
+	background-color: grey;
+	color:white;
+}
