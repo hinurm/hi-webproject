@@ -16,7 +16,7 @@ layer.bindPopup(feature.properties.NIMI)
 async function addDistrictsGeoJson(url) {
 const response = await fetch(url)
 const data = await response.json()
-const polygons = L.geoJson(data {
+const polygons = L.geoJson(data, {
 onEachFeature: popUPinfo,
 })
 polygons.addTo(map)
