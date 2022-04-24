@@ -42,7 +42,7 @@ const circles = L.geoJson(data, {
   pointToLayer: createCircle,
 })
 const clusters = L.markerClusterGroup()
-clusters.addLayer(markers)
+clusters.addLayer(circles)
 clusters.addTo(map)
 }
 addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
