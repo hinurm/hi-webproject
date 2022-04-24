@@ -9,6 +9,10 @@ attribution: 'OpenStreetMap contributors',
 osm.addTo(map)
 6
 
+function defaultMapSettings() {
+map.setView([58.373523, 26.716045], 12)
+}
+
 function popUPinfo(feature, layer) {
 layer.bindPopup(feature.properties.NIMI)
 }
