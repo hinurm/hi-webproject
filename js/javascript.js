@@ -41,6 +41,6 @@ const data = await response.json()
 const markers = L.geoJson(data)
 const clusters = L.markerClusterGroup()
 clusters.addLayer(markers)
-clusters.addTo(map))
+clusters.addTo(map)
 }
 addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
