@@ -38,9 +38,9 @@ addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
 function createCircle(feature, latlng) {
 let options = {
 radius: 5,
-fillColor: 'grey',
+fillColor: 'SlateBlue',
 fillOpacity: 0.5,
-color: 'black',
+color: 'DarkSlateBlue',
 weight: 1,
 opacity: 1,
 }
