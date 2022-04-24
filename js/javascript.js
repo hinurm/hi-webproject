@@ -39,7 +39,7 @@ function createCircle(feature, latlng) {
 let options = {
 radius: 5,
 fillColor: 'SlateBlue',
-fillOpacity: 0.5,
+fillOpacity: 1,
 color: 'DarkSlateBlue',
 weight: 1,
 opacity: 1,
