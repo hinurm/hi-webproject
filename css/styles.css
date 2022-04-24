@@ -17,6 +17,9 @@ h1 {
 	padding-left: 5%;
 	padding-right: 5%;
 }
+button {
+	margin-bottom:5px;
+}
 .map-container {
 	background-color: grey;
 	height: 700px;
@@ -26,7 +29,4 @@ footer {
 	padding:1%;
 	background-color: grey;
 	color:white;
-}
-button {
-	margin-bottom:5px;
 }
