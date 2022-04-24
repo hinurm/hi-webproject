@@ -13,15 +13,27 @@ function popUPinfo(feature, layer) {
 layer.bindPopup(feature.properties.NIMI)
 }
 
+function polygonStyle(feature) {
+return {
+fillColor: '#ffffff',
+fillOpacity: 0.5,
+weight: 1,
+opacity: 1,
+color: 'grey',
+}
+}
+
 async function addDistrictsGeoJson(url) {
 const response = await fetch(url)
 const data = await response.json()
 const polygons = L.geoJson(data, {
-onEachFeature: popUPinfo,
+  onEachFeature: popUPinfo,
+  style: polygonStyle,  
 })
 polygons.addTo(map)
 }
 addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
+
 
 function createCircle(feature, latlng) {
 let options = {
