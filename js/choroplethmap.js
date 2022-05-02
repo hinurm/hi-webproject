@@ -29,7 +29,8 @@ async function addDistrictsGeoJson(url) {
 			fillOpacity: 0.8,
 		},
 		onEachFeature: function (feature, layer) {
-			layer.bindPopup('Value: ' + feature.properties.TOWERS)
+			layer.bindPopup('Value: ' + feature.properties.TOWERS + /n +
+				       'Name: ' + feature.properties.NIMI)
 		},
 	}).addTo(map)
 }
