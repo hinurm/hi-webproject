@@ -24,8 +24,8 @@ async function addDistrictsGeoJson(url) {
 	const data = await response.json()
 	L.choropleth(data, {
 		valueProperty: 'TOWERS',
-		scale: ['#ffffff', '#ff9900'],
-		steps: 5,
+		scale: ['#f2f0f7', '#6a51a3'],
+		steps: 4,
 		mode: 'e',
 		style: {
 			color: '#fff',
