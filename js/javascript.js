@@ -23,11 +23,10 @@ fillColor: '#cccccc',
 fillOpacity: 0.5,
 weight: 1,
 opacity: 1,
-style: {
-  color: '#fff',
-  weight: 2,
-  fillOpacity: 0.8,
-},
+color: '#ffffff',
+weight: 2,
+fillOpacity: 0.8,
+  },
 }
 }
 
