@@ -13,44 +13,6 @@ function defaultMapSettings() {
 map.setView([58.373523, 26.716045], 12)
 }
 
-function popUPinfo(feature, layer) {
-layer.bindPopup(feature.properties.NIMI)
-}
-
-function polygonStyle(feature) {
-return {
-fillColor: '#ffffff',
-fillOpacity: 0.5,
-weight: 1,
-opacity: 1,
-color: 'grey',
-}
-}
-
-async function addDistrictsGeoJson(url) {
-const response = await fetch(url)
-const data = await response.json()
-const polygons = L.geoJson(data, {
-  onEachFeature: popUPinfo,
-  style: polygonStyle,  
-})
-polygons.addTo(map)
-}
-addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
-
-
-function createCircle(feature, latlng) {
-let options = {
-radius: 5,
-fillColor: 'SlateBlue',
-fillOpacity: 1,
-color: 'DarkSlateBlue',
-weight: 1,
-opacity: 1,
-}
-return L.circleMarker(latlng, options)
-}
-
 addCelltowersGeoJson('geojson/tartu_city_celltowers_edu.geojson')
 
 function heatDataConvert(feature) {
