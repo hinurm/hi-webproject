@@ -13,10 +13,6 @@ function defaultMapSettings() {
 map.setView([58.373523, 26.716045], 12)
 }
 
-function popUPinfo(feature, layer) {
-layer.bindPopup(feature.properties.NIMI)
-}
-
 addDistrictsGeoJson('geojson/tartu_city_districts_edu.geojson')
 
 async function addDistrictsGeoJson(url) {
