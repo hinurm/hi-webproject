@@ -19,11 +19,15 @@ layer.bindPopup(feature.properties.NIMI)
 
 function polygonStyle(feature) {
 return {
-fillColor: '#ffffff',
+fillColor: '#cccccc',
 fillOpacity: 0.5,
 weight: 1,
 opacity: 1,
-color: 'grey',
+style: {
+  color: '#fff',
+  weight: 2,
+  fillOpacity: 0.8,
+},
 }
 }
 
