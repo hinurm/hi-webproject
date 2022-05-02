@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+	<title>Web GIS</title>
+</head>
+
+<div>
+	<img src="img/banner.jpg" class="img">
+	<h1>Heatmap</h1>
+</div>
+
+<nav>
+	<a href="index.html">Basic Map</a>
+	<a href="choroplethmap.html" class="active">Choropleth Map</a>
+	<a href="heatmap.html">Heatmap</a>
+</nav>
+
+<div class="container">
+	<button onclick="defaultMapSettings()">Default view</button>
+	<div class="map-container" id="map">
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/leaflet.heat@0.2.0/dist/leaflet-heat.min.js"></script>
+		<script src="js/heatmap.js"></script>
+	</script></div>
+</div>
+
+<footer>&copy; Hanna-Ingrid Nurm, Tartu University, 2022</footer>
+
+</html>
