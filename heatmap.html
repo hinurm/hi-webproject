@@ -1,35 +1,32 @@
-!DOCTYPE html
-html
+<!DOCTYPE html>
+<html>
 
-head
-	meta charset=utf-8 
-	link rel=stylesheet href=cssstyles.css 
-	link rel=stylesheet href=httpsunpkg.comleaflet@1.7.1distleaflet.css
-	link rel=stylesheet href=httpsunpkg.comleaflet.markercluster@1.4.1distMarkerCluster.css 
-	link rel=stylesheet href=httpsunpkg.comleaflet.markercluster@1.4.1distMarkerCluster.Default.css 
-	titleWeb GIStitle
-head
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"/>
+	<title>Web GIS</title>
+</head>
 
-div
-	img src=imgbanner.jpg class=img
-	h1Web GIS applicationh1
-div
+<div>
+	<img src="img/banner.jpg" class="img">
+	<h1>Heatmap</h1>
+</div>
 
-nav
-	a href=index.html class=activeBasic Mapa
-	a href=#Choropleth Mapa
-	a href=#Heatmapa
-nav
+<nav>
+	<a href="index.html">Basic Map</a>
+	<a href="#">Choropleth Map</a>
+	<a href="heatmap.html" class="active">Heatmap</a>
+</nav>
 
-div class=container
-	button onclick=defaultMapSettings()Default viewbutton
-	div class=map-container id=map
-		script src=httpsunpkg.comleaflet@1.7.1distleaflet.jsscript
-		script src=httpsunpkg.comleaflet.markercluster@1.4.1distleaflet.markercluster.jsscript
-		script src=jsjavascript.js
-	scriptdiv
-div
+<div class="container">
+	<button onclick="defaultMapSettings()">Default view</button>
+	<div class="map-container" id="map">
+		<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+		<script src="js/javascript.js">
+	</script></div>
+</div>
 
-footer&copy; Hanna-Ingrid Nurm, Tartu University, 2022footer
+<footer>&copy; Hanna-Ingrid Nurm, Tartu University, 2022</footer>
 
-html
+</html>
