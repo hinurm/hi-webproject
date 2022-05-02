@@ -26,7 +26,6 @@ opacity: 1,
 color: '#ffffff',
 weight: 2,
 fillOpacity: 0.8,
-  },
 }
 }
 
